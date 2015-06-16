@@ -14,6 +14,9 @@
 		E8DC3D621B308CDD009B87E1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8DC3D611B308CDD009B87E1 /* Images.xcassets */; };
 		E8DC3D651B308CDD009B87E1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8DC3D631B308CDD009B87E1 /* LaunchScreen.xib */; };
 		E8DC3D711B308CDD009B87E1 /* RPI_AutomationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DC3D701B308CDD009B87E1 /* RPI_AutomationTests.swift */; };
+		E8DC3D7B1B30987E009B87E1 /* HTTPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DC3D7A1B30987E009B87E1 /* HTTPManager.swift */; };
+		E8DC3D911B309F13009B87E1 /* RequestsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DC3D901B309F13009B87E1 /* RequestsManager.swift */; };
+		E8DC3D931B309F32009B87E1 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DC3D921B309F32009B87E1 /* Request.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,9 @@
 		E8DC3D6A1B308CDD009B87E1 /* RPI-AutomationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RPI-AutomationTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8DC3D6F1B308CDD009B87E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8DC3D701B308CDD009B87E1 /* RPI_AutomationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPI_AutomationTests.swift; sourceTree = "<group>"; };
+		E8DC3D7A1B30987E009B87E1 /* HTTPManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPManager.swift; sourceTree = "<group>"; };
+		E8DC3D901B309F13009B87E1 /* RequestsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestsManager.swift; sourceTree = "<group>"; };
+		E8DC3D921B309F32009B87E1 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +92,9 @@
 				E8DC3D631B308CDD009B87E1 /* LaunchScreen.xib */,
 				E8DC3D591B308CDD009B87E1 /* RPI_Automation.xcdatamodeld */,
 				E8DC3D551B308CDD009B87E1 /* Supporting Files */,
+				E8DC3D7A1B30987E009B87E1 /* HTTPManager.swift */,
+				E8DC3D901B309F13009B87E1 /* RequestsManager.swift */,
+				E8DC3D921B309F32009B87E1 /* Request.swift */,
 			);
 			path = "RPI-Automation";
 			sourceTree = "<group>";
@@ -215,9 +224,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8DC3D911B309F13009B87E1 /* RequestsManager.swift in Sources */,
 				E8DC3D5D1B308CDD009B87E1 /* ViewController.swift in Sources */,
 				E8DC3D5B1B308CDD009B87E1 /* RPI_Automation.xcdatamodeld in Sources */,
 				E8DC3D581B308CDD009B87E1 /* AppDelegate.swift in Sources */,
+				E8DC3D7B1B30987E009B87E1 /* HTTPManager.swift in Sources */,
+				E8DC3D931B309F32009B87E1 /* Request.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,8 +359,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "RPI-Automation/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -357,8 +371,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "RPI-Automation/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

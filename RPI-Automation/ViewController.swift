@@ -12,7 +12,10 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        HTTPManager.send(RequestsManager.requests[1].url)
+
+        HTTPManager.send(RequestsManager.requests[0].url)
     }
 
     override func didReceiveMemoryWarning() {
