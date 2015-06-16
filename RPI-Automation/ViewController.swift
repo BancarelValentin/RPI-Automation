@@ -9,18 +9,19 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBAction func clickOnOn(sender: AnyObject) {HTTPManager.send(RequestsManager.requests[0].url)
+    }
 
+    @IBAction func clickOnOff(sender: AnyObject) {HTTPManager.send(RequestsManager.requests[1].url)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        HTTPManager.send(RequestsManager.requests[1].url)
-
-        HTTPManager.send(RequestsManager.requests[0].url)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
 

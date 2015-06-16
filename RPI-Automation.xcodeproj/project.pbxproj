@@ -17,6 +17,10 @@
 		E8DC3D7B1B30987E009B87E1 /* HTTPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DC3D7A1B30987E009B87E1 /* HTTPManager.swift */; };
 		E8DC3D911B309F13009B87E1 /* RequestsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DC3D901B309F13009B87E1 /* RequestsManager.swift */; };
 		E8DC3D931B309F32009B87E1 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DC3D921B309F32009B87E1 /* Request.swift */; };
+		E8DC3D9B1B30A70E009B87E1 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8DC3D9A1B30A70E009B87E1 /* NotificationCenter.framework */; };
+		E8DC3DA01B30A70E009B87E1 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DC3D9F1B30A70E009B87E1 /* TodayViewController.swift */; };
+		E8DC3DA21B30A70E009B87E1 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8DC3DA11B30A70E009B87E1 /* MainInterface.storyboard */; };
+		E8DC3DA51B30A70E009B87E1 /* RPI-Automation-CCExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E8DC3D981B30A70E009B87E1 /* RPI-Automation-CCExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,7 +31,28 @@
 			remoteGlobalIDString = E8DC3D511B308CDD009B87E1;
 			remoteInfo = "RPI-Automation";
 		};
+		E8DC3DA31B30A70E009B87E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8DC3D4A1B308CDD009B87E1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8DC3D971B30A70E009B87E1;
+			remoteInfo = "RPI-Automation-CCExtension";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E8DC3DA91B30A70E009B87E1 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E8DC3DA51B30A70E009B87E1 /* RPI-Automation-CCExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E8DC3D521B308CDD009B87E1 /* RPI-Automation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RPI-Automation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +69,11 @@
 		E8DC3D7A1B30987E009B87E1 /* HTTPManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPManager.swift; sourceTree = "<group>"; };
 		E8DC3D901B309F13009B87E1 /* RequestsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestsManager.swift; sourceTree = "<group>"; };
 		E8DC3D921B309F32009B87E1 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		E8DC3D981B30A70E009B87E1 /* RPI-Automation-CCExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "RPI-Automation-CCExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8DC3D9A1B30A70E009B87E1 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		E8DC3D9E1B30A70E009B87E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8DC3D9F1B30A70E009B87E1 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		E8DC3DA11B30A70E009B87E1 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +91,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E8DC3D951B30A70E009B87E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8DC3D9B1B30A70E009B87E1 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -69,6 +107,8 @@
 			children = (
 				E8DC3D541B308CDD009B87E1 /* RPI-Automation */,
 				E8DC3D6D1B308CDD009B87E1 /* RPI-AutomationTests */,
+				E8DC3D9C1B30A70E009B87E1 /* RPI-Automation-CCExtension */,
+				E8DC3D991B30A70E009B87E1 /* Frameworks */,
 				E8DC3D531B308CDD009B87E1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -78,6 +118,7 @@
 			children = (
 				E8DC3D521B308CDD009B87E1 /* RPI-Automation.app */,
 				E8DC3D6A1B308CDD009B87E1 /* RPI-AutomationTests.xctest */,
+				E8DC3D981B30A70E009B87E1 /* RPI-Automation-CCExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -124,6 +165,32 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		E8DC3D991B30A70E009B87E1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E8DC3D9A1B30A70E009B87E1 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E8DC3D9C1B30A70E009B87E1 /* RPI-Automation-CCExtension */ = {
+			isa = PBXGroup;
+			children = (
+				E8DC3D9F1B30A70E009B87E1 /* TodayViewController.swift */,
+				E8DC3DA11B30A70E009B87E1 /* MainInterface.storyboard */,
+				E8DC3D9D1B30A70E009B87E1 /* Supporting Files */,
+			);
+			path = "RPI-Automation-CCExtension";
+			sourceTree = "<group>";
+		};
+		E8DC3D9D1B30A70E009B87E1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E8DC3D9E1B30A70E009B87E1 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,10 +201,12 @@
 				E8DC3D4E1B308CDD009B87E1 /* Sources */,
 				E8DC3D4F1B308CDD009B87E1 /* Frameworks */,
 				E8DC3D501B308CDD009B87E1 /* Resources */,
+				E8DC3DA91B30A70E009B87E1 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E8DC3DA41B30A70E009B87E1 /* PBXTargetDependency */,
 			);
 			name = "RPI-Automation";
 			productName = "RPI-Automation";
@@ -162,6 +231,23 @@
 			productReference = E8DC3D6A1B308CDD009B87E1 /* RPI-AutomationTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		E8DC3D971B30A70E009B87E1 /* RPI-Automation-CCExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8DC3DA61B30A70E009B87E1 /* Build configuration list for PBXNativeTarget "RPI-Automation-CCExtension" */;
+			buildPhases = (
+				E8DC3D941B30A70E009B87E1 /* Sources */,
+				E8DC3D951B30A70E009B87E1 /* Frameworks */,
+				E8DC3D961B30A70E009B87E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RPI-Automation-CCExtension";
+			productName = "RPI-Automation-CCExtension";
+			productReference = E8DC3D981B30A70E009B87E1 /* RPI-Automation-CCExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -177,6 +263,9 @@
 					E8DC3D691B308CDD009B87E1 = {
 						CreatedOnToolsVersion = 6.3.2;
 						TestTargetID = E8DC3D511B308CDD009B87E1;
+					};
+					E8DC3D971B30A70E009B87E1 = {
+						CreatedOnToolsVersion = 6.3.2;
 					};
 				};
 			};
@@ -195,6 +284,7 @@
 			targets = (
 				E8DC3D511B308CDD009B87E1 /* RPI-Automation */,
 				E8DC3D691B308CDD009B87E1 /* RPI-AutomationTests */,
+				E8DC3D971B30A70E009B87E1 /* RPI-Automation-CCExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -214,6 +304,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8DC3D961B30A70E009B87E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8DC3DA21B30A70E009B87E1 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +339,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E8DC3D941B30A70E009B87E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8DC3DA01B30A70E009B87E1 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -248,6 +354,11 @@
 			isa = PBXTargetDependency;
 			target = E8DC3D511B308CDD009B87E1 /* RPI-Automation */;
 			targetProxy = E8DC3D6B1B308CDD009B87E1 /* PBXContainerItemProxy */;
+		};
+		E8DC3DA41B30A70E009B87E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E8DC3D971B30A70E009B87E1 /* RPI-Automation-CCExtension */;
+			targetProxy = E8DC3DA31B30A70E009B87E1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -412,6 +523,32 @@
 			};
 			name = Release;
 		};
+		E8DC3DA71B30A70E009B87E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "RPI-Automation-CCExtension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		E8DC3DA81B30A70E009B87E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "RPI-Automation-CCExtension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -437,6 +574,14 @@
 			buildConfigurations = (
 				E8DC3D781B308CDD009B87E1 /* Debug */,
 				E8DC3D791B308CDD009B87E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E8DC3DA61B30A70E009B87E1 /* Build configuration list for PBXNativeTarget "RPI-Automation-CCExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8DC3DA71B30A70E009B87E1 /* Debug */,
+				E8DC3DA81B30A70E009B87E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
