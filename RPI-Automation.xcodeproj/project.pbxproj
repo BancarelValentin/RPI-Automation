@@ -568,6 +568,7 @@
 				E8DC3D761B308CDD009B87E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E8DC3D771B308CDD009B87E1 /* Build configuration list for PBXNativeTarget "RPI-AutomationTests" */ = {
 			isa = XCConfigurationList;
@@ -576,6 +577,7 @@
 				E8DC3D791B308CDD009B87E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E8DC3DA61B30A70E009B87E1 /* Build configuration list for PBXNativeTarget "RPI-Automation-CCExtension" */ = {
 			isa = XCConfigurationList;
@@ -584,6 +586,7 @@
 				E8DC3DA81B30A70E009B87E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

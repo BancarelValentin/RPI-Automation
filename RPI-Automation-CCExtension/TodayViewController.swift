@@ -10,17 +10,30 @@ import UIKit
 import NotificationCenter
 
 class TodayViewController: UIViewController, NCWidgetProviding {
-    @IBOutlet weak var lbTest: UILabel!
+    
     @IBAction func clickOnOn(sender: AnyObject) {
-        lbTest.text = "on"
+        NSLog("on from CC")
+        self.send("http://192.168.1.12/app_dev.php/rpi/allOn")
+        NSLog("done")
     }
         
     @IBAction func clickOnOff(sender: AnyObject) {
-        lbTest.text = "off"
+        NSLog("off from CC")
+        self.send("http://192.168.1.12/app_dev.php/rpi/allOff")
+        NSLog("done")
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view from its nib.
+    }
+    
+    func send(url: String) {
+        var request = NSURLRequest(URL: NSURL(string: url)!)
+        var response: NSURLResponse?
+        var error: NSErrorPointer = nil
+        var data = NSURLConnection.sendSynchronousRequest(request, returningResponse: &response, error: error)
+        var reply = NSString(data: data!, encoding: NSUTF8StringEncoding)
     }
     
     override func didReceiveMemoryWarning() {

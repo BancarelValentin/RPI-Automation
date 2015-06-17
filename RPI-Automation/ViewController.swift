@@ -10,10 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBAction func clickOnOn(sender: AnyObject) {HTTPManager.send(RequestsManager.requests[0].url)
+    @IBAction func clickOnOn(sender: AnyObject) {
+        NSLog("on from app")
+        HTTPManager.send(RequestsManager.requests[0].url)
+        NSLog("done")
     }
 
-    @IBAction func clickOnOff(sender: AnyObject) {HTTPManager.send(RequestsManager.requests[1].url)
+    @IBAction func clickOnOff(sender: AnyObject) {
+        NSLog("off from app")
+        HTTPManager.send(RequestsManager.requests[1].url)
+        NSLog("done")
     }
     
     override func viewDidLoad() {
